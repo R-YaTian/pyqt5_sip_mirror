@@ -34,7 +34,7 @@ if sys.platform == 'win32':
     module_src.append('bool.cpp')
 
 module = Extension('PyQt5.sip', module_src,
-                   define_macros=[('_USING_V110_SDK71_', None), ('WIN32_WINNT=0x0503', None)],
+                   define_macros=[('_USING_V110_SDK71_', None), ('_WIN32_WINNT=0x0503', None)],
                    extra_link_args=['/subsystem:console,5.01'])
 
 # Do the setup.
